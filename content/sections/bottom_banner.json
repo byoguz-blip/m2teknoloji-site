@@ -1,16 +1,16 @@
 {
-  "height": "420px",
-  "overlay": 0.78,
-  "blur": 8,
+  "bg_image": "/assets/img/cta.jpg",
+  "subtitle_tr": "Güvenlik, performans ve sürdürülebilirlik için birlikte planlayalım.sssss",
   "title_tr": "Altyapınızı güçlendirelim",
-  "title_en": "Let’s strengthen your infrastructure",
-  "subtitle_tr": "Güvenlik, performans ve sürdürülebilirlik için birlikte planlayalım.",
-  "subtitle_en": "Let’s plan together for security, performance, and sustainability.",
-  "cta1_tr": "İletişim",
-  "cta1_en": "Contact",
-  "cta1_href": "#contact",
-  "cta2_tr": "Shop",
   "cta2_en": "Shop",
+  "blur": 8,
+  "height": "420px",
+  "cta1_en": "Contact",
   "cta2_href": "https://shop.m2teknoloji.com",
-  "bg_image": "/assets/img/cta.jpg"
+  "cta1_href": "#contact",
+  "overlay": 0.78,
+  "subtitle_en": "Let’s plan together for security, performance, and sustainability.",
+  "title_en": "Let’s strengthen your infrastructure",
+  "cta2_tr": "Shop",
+  "cta1_tr": "İletişim"
 }
