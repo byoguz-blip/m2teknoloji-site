@@ -1,171 +1,26 @@
-<!doctype html>
-<html lang="tr">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>M2 Teknoloji</title>
-  <meta name="description" content="IT Solutions, Network & Security">
-  <link rel="icon" href="/assets/img/favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="stylesheet" href="/assets/css/site.css">
-</head>
-<body>
-  <header class="m2-header" id="top">
-    <div class="m2-shell header-inner">
-      <a class="brand" href="#top" aria-label="M2 Teknoloji">
-        <img class="brand-logo" src="/assets/img/logo.png" alt="M2">
-        <span class="brand-name" data-i18n="brand">M2 Teknoloji</span>
-      </a>
-
-      <nav class="nav" id="nav"></nav>
-
-      <div class="header-actions">
-        <a class="icon-btn" id="shopBtn" href="https://shop.m2teknoloji.com" target="_blank" rel="noopener" aria-label="Shop">
-          <svg viewBox="0 0 24 24"><path d="M7 4H5L4 6v2h2l2.6 9.4c.2.9 1 1.6 2 1.6h7.9c.9 0 1.7-.6 2-1.5L23 10H6.4L7 4zm4 18a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm8 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
-        </a>
-
-        <button class="flag-btn" id="langTR" type="button" aria-label="Türkçe">
-          <img src="/assets/img/flag-tr.svg" alt="TR">
-        </button>
-        <button class="flag-btn" id="langEN" type="button" aria-label="English">
-          <img src="/assets/img/flag-en.svg" alt="EN">
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="hero">
-      <div class="hero-bg" id="heroBg"></div>
-      <div class="hero-overlay" id="heroOverlay"></div>
-      <div class="hero-inner m2-shell" id="heroInner"></div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="services_title">Hizmetler</h2>
-          <p class="muted" data-i18n="services_sub">Yönetilen servisler, ağ altyapısı, güvenlik ve destek.</p>
-        </div>
-        <div class="grid" id="servicesGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="partners">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="partners_title">Partner Markalar</h2>
-          <p class="muted" data-i18n="partners_sub">Birlikte çalıştığımız teknoloji ortakları.</p>
-        </div>
-        <div class="logo-slider" data-autoscroll="1" data-speed="28">
-          <div class="logo-track" id="partnersTrack"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="solutions">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="solutions_title">Çözümler</h2>
-          <p class="muted" data-i18n="solutions_sub">Sektörünüze uygun uçtan uca çözüm paketleri.</p>
-        </div>
-        <div class="grid" id="solutionsGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="projects">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="projects_title">Projeler</h2>
-          <p class="muted" data-i18n="projects_sub">Öne çıkan uygulama ve altyapı dönüşümleri.</p>
-        </div>
-        <div class="grid" id="projectsGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="blog">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="blog_title">Blog</h2>
-          <p class="muted" data-i18n="blog_sub">Güncel ipuçları, güvenlik notları ve rehberler.</p>
-        </div>
-        <div class="grid" id="blogGrid"></div>
-      </div>
-    </section>
-
-    <section class="section" id="references">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 data-i18n="references_title">Referanslar</h2>
-          <p class="muted" data-i18n="references_sub">Güvenen markalarla uzun soluklu iş birliği.</p>
-        </div>
-        <div class="logo-slider" data-autoscroll="1" data-speed="22">
-          <div class="logo-track" id="referencesTrack"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="m2-shell">
-        <div class="two-col">
-          <div>
-            <h2 id="aboutTitle"></h2>
-            <p class="muted" id="aboutText"></p>
-            <div class="btn-row">
-              <a class="btn primary" href="#contact" data-i18n="about_cta">İletişim</a>
-            </div>
-          </div>
-          <div class="card">
-            <h3 data-i18n="highlights">Öne Çıkanlar</h3>
-            <ul id="aboutBullets"></ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="contact">
-      <div class="m2-shell">
-        <div class="section-head">
-          <h2 id="contactTitle"></h2>
-          <p class="muted" id="contactSubtitle"></p>
-        </div>
-        <div class="contact-wrap">
-          <div class="card">
-            <div class="kv"><strong data-i18n="address">Adres:</strong> <span id="contactAddress"></span></div>
-            <div class="kv"><strong data-i18n="phone">Telefon:</strong> <span id="contactPhone"></span></div>
-            <div class="kv"><strong>E-posta:</strong> <span id="contactEmail"></span></div>
-            <div class="btn-row">
-              <a class="btn" id="waBtn" target="_blank" rel="noopener">WhatsApp</a>
-              <a class="btn" href="mailto:" id="mailBtn">E-posta</a>
-            </div>
-          </div>
-          <div class="card map-card">
-            <iframe id="mapFrame" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta" id="bottomBanner">
-      <div class="cta-bg" id="ctaBg"></div>
-      <div class="cta-overlay" id="ctaOverlay"></div>
-      <div class="cta-inner m2-shell" id="ctaInner"></div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="m2-shell footer-inner">
-      <div class="foot-brand">
-        <img src="/assets/img/logo.png" alt="M2" width="34" height="34">
-        <div>
-          <div class="foot-title" data-i18n="brand">M2 Teknoloji</div>
-          <div class="foot-sub" id="tagline"></div>
-        </div>
-      </div>
-      <div class="foot-copy" id="footerCopy"></div>
-    </div>
-  </footer>
-
-  <script src="/assets/js/app.js"></script>
-</body>
-</html>
+[
+  {
+    "slug": "project-1",
+    "title_tr": "Kurumsal Firewall Geçişi",
+    "title_en": "Enterprise Firewall Migration",
+    "excerpt_tr": "Politika, VPN ve loglama ile güvenli geçiş.",
+    "excerpt_en": "Secure migration with policies, VPN, and logging.",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "project-2",
+    "title_tr": "Sanallaştırma Yenileme",
+    "title_en": "Virtualization Refresh",
+    "excerpt_tr": "Cluster + yedeklilik + izleme.",
+    "excerpt_en": "Cluster + redundancy + monitoring.",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "project-3",
+    "title_tr": "Backup & DR Kurulumu",
+    "title_en": "Backup & DR Setup",
+    "excerpt_tr": "Offsite replikasyon ve test senaryoları.",
+    "excerpt_en": "Offsite replication and test scenarios.",
+    "image": "/assets/img/placeholder-card.svg"
+  }
+]

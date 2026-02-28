@@ -1,10 +1,42 @@
-[build]
-  publish = "."
-  command = ""
-
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Frame-Options = "SAMEORIGIN"
-    X-Content-Type-Options = "nosniff"
-    Referrer-Policy = "strict-origin-when-cross-origin"
+[
+  {
+    "name": "Fortinet",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "Microsoft",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "VMware",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "Ubiquiti",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "Veeam",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "Dell",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "HPE",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  },
+  {
+    "name": "Sophos",
+    "logo": "/assets/img/logo-placeholder.svg",
+    "url": "#"
+  }
+]

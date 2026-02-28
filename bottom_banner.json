@@ -1,0 +1,50 @@
+{
+  "brand": "M2 Teknoloji",
+  "tagline_tr": "IT Solutions • Network & Security • Help Desk",
+  "tagline_en": "IT Solutions • Network & Security • Help Desk",
+  "shop_url": "https://shop.m2teknoloji.com",
+  "nav": [
+    {
+      "id": "services",
+      "tr": "Hizmetler",
+      "en": "Services"
+    },
+    {
+      "id": "partners",
+      "tr": "Partner Markalar",
+      "en": "Partners"
+    },
+    {
+      "id": "solutions",
+      "tr": "Çözümler",
+      "en": "Solutions"
+    },
+    {
+      "id": "projects",
+      "tr": "Projeler",
+      "en": "Projects"
+    },
+    {
+      "id": "blog",
+      "tr": "Blog",
+      "en": "Blog"
+    },
+    {
+      "id": "references",
+      "tr": "Referanslar",
+      "en": "References"
+    },
+    {
+      "id": "about",
+      "tr": "Hakkımızda",
+      "en": "About"
+    },
+    {
+      "id": "contact",
+      "tr": "İletişim",
+      "en": "Contact"
+    }
+  ],
+  "footer_tr": "© M2 Teknoloji — Tüm hakları saklıdır.",
+  "footer_en": "© M2 Teknoloji — All rights reserved."
+}

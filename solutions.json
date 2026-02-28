@@ -1,0 +1,18 @@
+{
+  "title_tr": "Hakkımızda",
+  "title_en": "About",
+  "text_tr": "M2 Teknoloji; sunucu, ağ ve güvenlik tarafında uçtan uca kurulum, yönetim ve destek sunar. Kurumsal standardı KOBİ pratikliğiyle birleştirir.",
+  "text_en": "M2 Teknoloji delivers end-to-end setup, management and support for servers, networks, and security—combining enterprise standards with SMB agility.",
+  "bullets_tr": [
+    "24/7 izleme & uyarı (opsiyon)",
+    "Firewall / VPN / EDR mimarileri",
+    "Backup & DR planlama",
+    "Help desk süreçleri"
+  ],
+  "bullets_en": [
+    "24/7 monitoring & alerts (optional)",
+    "Firewall / VPN / EDR architectures",
+    "Backup & DR planning",
+    "Help desk processes"
+  ]
+}

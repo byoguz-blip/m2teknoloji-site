@@ -1,0 +1,18 @@
+{
+  "height": "78vh",
+  "overlay": 0.78,
+  "blur": 12,
+  "kicker_tr": "M2 Teknoloji",
+  "kicker_en": "M2 Teknoloji",
+  "title_tr": "IT Solutions, Network & Security",
+  "title_en": "IT Solutions, Network & Security",
+  "subtitle_tr": "Sunucu altyapısı, ağ yönetimi ve siber güvenlikte uçtan uca destek.",
+  "subtitle_en": "End-to-end support for server infrastructure, network management and cyber security.",
+  "cta1_tr": "İletişim",
+  "cta1_en": "Contact",
+  "cta1_href": "#contact",
+  "cta2_tr": "Hizmetler",
+  "cta2_en": "Services",
+  "cta2_href": "#services",
+  "bg_image": "/assets/img/hero.jpg"
+}

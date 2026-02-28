@@ -1,0 +1,16 @@
+{
+  "height": "420px",
+  "overlay": 0.78,
+  "blur": 8,
+  "title_tr": "Altyapınızı güçlendirelim",
+  "title_en": "Let’s strengthen your infrastructure",
+  "subtitle_tr": "Güvenlik, performans ve sürdürülebilirlik için birlikte planlayalım.",
+  "subtitle_en": "Let’s plan together for security, performance, and sustainability.",
+  "cta1_tr": "İletişim",
+  "cta1_en": "Contact",
+  "cta1_href": "#contact",
+  "cta2_tr": "Shop",
+  "cta2_en": "Shop",
+  "cta2_href": "https://shop.m2teknoloji.com",
+  "bg_image": "/assets/img/cta.jpg"
+}
