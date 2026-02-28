@@ -1,0 +1,11 @@
+{
+  "title": "References",
+  "subtitle": "Brands and clients we work with.",
+  "items": [
+    {
+      "name": "Reference 1",
+      "logo": "/assets/uploads/references/r1.svg",
+      "href": "#"
+    }
+  ]
+}

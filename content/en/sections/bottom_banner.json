@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "height": "360px",
+  "title": "Let’s strengthen your infrastructure",
+  "text": "Let’s analyze your needs and plan the right solution.",
+  "cta": {
+    "text": "Get in Touch",
+    "href": "#contact"
+  },
+  "bg_image": "/assets/uploads/bottom-banner.jpg",
+  "overlay": 0.55
+}

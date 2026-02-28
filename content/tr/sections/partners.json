@@ -1,0 +1,16 @@
+{
+  "title": "Partner Markalar",
+  "subtitle": "Birlikte çalıştığımız teknoloji ortakları.",
+  "items": [
+    {
+      "name": "Fortinet",
+      "logo": "/assets/uploads/partners/fortinet.svg",
+      "href": "https://www.fortinet.com/"
+    },
+    {
+      "name": "Microsoft",
+      "logo": "/assets/uploads/partners/microsoft.svg",
+      "href": "https://www.microsoft.com/"
+    }
+  ]
+}

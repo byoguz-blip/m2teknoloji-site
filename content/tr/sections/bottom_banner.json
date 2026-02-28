@@ -1,0 +1,12 @@
+{
+  "enabled": true,
+  "height": "360px",
+  "title": "Kurumsal altyapınızı güçlendirelim",
+  "text": "İhtiyacınızı birlikte analiz edelim, en doğru çözümü planlayalım.",
+  "cta": {
+    "text": "İletişime Geç",
+    "href": "#contact"
+  },
+  "bg_image": "/assets/uploads/bottom-banner.jpg",
+  "overlay": 0.55
+}

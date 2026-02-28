@@ -1,0 +1,16 @@
+{
+  "title": "Çözümler",
+  "subtitle": "Sektörünüze uygun uçtan uca çözüm paketleri.",
+  "items": [
+    {
+      "title": "Firewall (FortiGate)",
+      "text": "Kurulum, kural, optimizasyon.",
+      "href": "#contact"
+    },
+    {
+      "title": "Kablosuz (Wi-Fi)",
+      "text": "Kapsama ve performans.",
+      "href": "#contact"
+    }
+  ]
+}

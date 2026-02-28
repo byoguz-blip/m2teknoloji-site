@@ -1,0 +1,16 @@
+{
+  "title": "Partner Brands",
+  "subtitle": "Technology partners we work with.",
+  "items": [
+    {
+      "name": "Fortinet",
+      "logo": "/assets/uploads/partners/fortinet.svg",
+      "href": "https://www.fortinet.com/"
+    },
+    {
+      "name": "Microsoft",
+      "logo": "/assets/uploads/partners/microsoft.svg",
+      "href": "https://www.microsoft.com/"
+    }
+  ]
+}

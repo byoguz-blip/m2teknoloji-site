@@ -1,0 +1,15 @@
+{
+  "title": "About",
+  "text": "We provide enterprise-grade services in servers, networking and security.",
+  "bullets": [
+    {
+      "item": "24/7 monitoring and response"
+    },
+    {
+      "item": "Security-first mindset"
+    },
+    {
+      "item": "Scalable architecture"
+    }
+  ]
+}

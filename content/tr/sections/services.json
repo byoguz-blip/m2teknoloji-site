@@ -1,0 +1,24 @@
+{
+  "title": "Hizmetler",
+  "subtitle": "Yönetilen servisler, ağ altyapısı, güvenlik ve destek.",
+  "items": [
+    {
+      "title": "Yedekleme & Felaket Kurtarma",
+      "text": "Verileriniz güvence altında.",
+      "icon": "shield",
+      "href": "#contact"
+    },
+    {
+      "title": "Sunucu & Sanallaştırma",
+      "text": "Stabil ve ölçeklenebilir altyapı.",
+      "icon": "server",
+      "href": "#contact"
+    },
+    {
+      "title": "Network Security",
+      "text": "Güvenli geçit ve politika yönetimi.",
+      "icon": "lock",
+      "href": "#contact"
+    }
+  ]
+}

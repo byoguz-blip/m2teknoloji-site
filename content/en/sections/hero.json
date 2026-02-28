@@ -1,0 +1,17 @@
+{
+  "height": "78vh",
+  "overlay": 0.78,
+  "blur": 12,
+  "kicker": "M2 Technology",
+  "title": "IT Solutions, Network & Security",
+  "subtitle": "End-to-end support for servers, networks and cybersecurity.",
+  "cta1": {
+    "text": "Contact",
+    "href": "#contact"
+  },
+  "cta2": {
+    "text": "Services",
+    "href": "#services"
+  },
+  "bg_image": "/assets/uploads/hero.jpg"
+}

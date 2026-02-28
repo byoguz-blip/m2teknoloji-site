@@ -1,0 +1,16 @@
+{
+  "title": "Solutions",
+  "subtitle": "End-to-end solution packages for your business.",
+  "items": [
+    {
+      "title": "Firewall (FortiGate)",
+      "text": "Setup, rules, optimization.",
+      "href": "#contact"
+    },
+    {
+      "title": "Wireless (Wi-Fi)",
+      "text": "Coverage and performance.",
+      "href": "#contact"
+    }
+  ]
+}

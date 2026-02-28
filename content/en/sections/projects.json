@@ -1,0 +1,12 @@
+{
+  "title": "Projects",
+  "subtitle": "Featured infrastructure and security projects.",
+  "items": [
+    {
+      "title": "Security Gateway Deployment",
+      "text": "End-to-end security with FortiGate.",
+      "image": "/assets/uploads/projects/p1.jpg",
+      "href": "#contact"
+    }
+  ]
+}

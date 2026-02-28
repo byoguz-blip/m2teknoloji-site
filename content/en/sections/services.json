@@ -1,0 +1,24 @@
+{
+  "title": "Services",
+  "subtitle": "Managed services, networking, security and support.",
+  "items": [
+    {
+      "title": "Backup & Disaster Recovery",
+      "text": "Keep your data safe.",
+      "icon": "shield",
+      "href": "#contact"
+    },
+    {
+      "title": "Servers & Virtualization",
+      "text": "Stable and scalable infrastructure.",
+      "icon": "server",
+      "href": "#contact"
+    },
+    {
+      "title": "Network Security",
+      "text": "Policies, gateways and protection.",
+      "icon": "lock",
+      "href": "#contact"
+    }
+  ]
+}

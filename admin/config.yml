@@ -5,216 +5,396 @@ backend:
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
 
+locale: "tr"
+
 collections:
-  - name: "settings"
-    label: "Site Ayarları"
+
+  - name: "site_tr"
+    label: "Site Ayarları (TR)"
     files:
-      - label: "Genel"
-        name: "site"
-        file: "content/settings/site.json"
-        format: "json"
+      - file: "content/tr/settings/site.json"
+        label: "Genel (TR)"
+        name: "site_tr_global"
         fields:
-          - {label: "Marka Adı", name: "brand", widget: "string"}
-          - {label: "Tagline (TR)", name: "tagline_tr", widget: "string"}
-          - {label: "Tagline (EN)", name: "tagline_en", widget: "string"}
-          - {label: "Shop URL", name: "shop_url", widget: "string"}
-          - label: "Menü"
-            name: "nav"
+          - { label: "Site Başlığı", name: "site_title", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Shop URL", name: "shop_url", widget: "string", default: "https://shop.m2teknoloji.com" }
+          - { label: "Dil Bayrakları Göster", name: "show_lang_switch", widget: "boolean", default: true }
+          - { label: "Üst Menü Sticky Blur", name: "sticky_blur", widget: "boolean", default: true }
+
+  - name: "site_en"
+    label: "Site Ayarları (EN)"
+    files:
+      - file: "content/en/settings/site.json"
+        label: "Global (EN)"
+        name: "site_en_global"
+        fields:
+          - { label: "Site Title", name: "site_title", widget: "string" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - { label: "Shop URL", name: "shop_url", widget: "string", default: "https://shop.m2teknoloji.com" }
+          - { label: "Show Language Flags", name: "show_lang_switch", widget: "boolean", default: true }
+          - { label: "Sticky Blur Header", name: "sticky_blur", widget: "boolean", default: true }
+
+  - name: "hero_tr"
+    label: "Üst Banner (Hero) (TR)"
+    files:
+      - file: "content/tr/sections/hero.json"
+        label: "Hero (TR)"
+        name: "hero_tr_file"
+        fields:
+          - { label: "Yükseklik (örn: 78vh / 720px)", name: "height", widget: "string", default: "78vh" }
+          - { label: "Overlay (0.30-0.92)", name: "overlay", widget: "number", value_type: "float", min: 0.3, max: 0.92, step: 0.01, default: 0.78 }
+          - { label: "Blur (px)", name: "blur", widget: "number", value_type: "int", min: 0, max: 40, step: 1, default: 12 }
+          - { label: "Kicker", name: "kicker", widget: "string", required: false }
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Alt Metin", name: "subtitle", widget: "text", required: false }
+          - label: "CTA 1"
+            name: "cta1"
+            widget: "object"
+            fields:
+              - { label: "Buton Metni", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - label: "CTA 2"
+            name: "cta2"
+            widget: "object"
+            fields:
+              - { label: "Buton Metni", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - { label: "Arkaplan Görsel", name: "bg_image", widget: "image", required: false }
+
+  - name: "hero_en"
+    label: "Top Banner (Hero) (EN)"
+    files:
+      - file: "content/en/sections/hero.json"
+        label: "Hero (EN)"
+        name: "hero_en_file"
+        fields:
+          - { label: "Height (e.g. 78vh / 720px)", name: "height", widget: "string", default: "78vh" }
+          - { label: "Overlay (0.30-0.92)", name: "overlay", widget: "number", value_type: "float", min: 0.3, max: 0.92, step: 0.01, default: 0.78 }
+          - { label: "Blur (px)", name: "blur", widget: "number", value_type: "int", min: 0, max: 40, step: 1, default: 12 }
+          - { label: "Kicker", name: "kicker", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "CTA 1"
+            name: "cta1"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - label: "CTA 2"
+            name: "cta2"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - { label: "Background Image", name: "bg_image", widget: "image", required: false }
+
+  - name: "bottom_banner_tr"
+    label: "Alt Banner (TR)"
+    files:
+      - file: "content/tr/sections/bottom_banner.json"
+        label: "Alt Banner (TR)"
+        name: "bottom_banner_tr_file"
+        fields:
+          - { label: "Aktif", name: "enabled", widget: "boolean", default: true }
+          - { label: "Yükseklik (örn: 360px / 40vh)", name: "height", widget: "string", default: "360px" }
+          - { label: "Başlık", name: "title", widget: "string", required: false }
+          - { label: "Metin", name: "text", widget: "text", required: false }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Buton Metni", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - { label: "Arkaplan Görsel", name: "bg_image", widget: "image", required: false }
+          - { label: "Overlay (0-0.9)", name: "overlay", widget: "number", value_type: "float", min: 0, max: 0.9, step: 0.01, default: 0.55 }
+
+  - name: "bottom_banner_en"
+    label: "Bottom Banner (EN)"
+    files:
+      - file: "content/en/sections/bottom_banner.json"
+        label: "Bottom Banner (EN)"
+        name: "bottom_banner_en_file"
+        fields:
+          - { label: "Enabled", name: "enabled", widget: "boolean", default: true }
+          - { label: "Height (e.g. 360px / 40vh)", name: "height", widget: "string", default: "360px" }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Text", name: "text", widget: "text", required: false }
+          - label: "CTA"
+            name: "cta"
+            widget: "object"
+            fields:
+              - { label: "Text", name: "text", widget: "string", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+          - { label: "Background Image", name: "bg_image", widget: "image", required: false }
+          - { label: "Overlay (0-0.9)", name: "overlay", widget: "number", value_type: "float", min: 0, max: 0.9, step: 0.01, default: 0.55 }
+
+  - name: "about_tr"
+    label: "Hakkımızda (TR)"
+    files:
+      - file: "content/tr/sections/about.json"
+        label: "Hakkımızda (TR)"
+        name: "about_tr_file"
+        fields:
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Metin", name: "text", widget: "text" }
+          - label: "Öne Çıkanlar"
+            name: "bullets"
             widget: "list"
             fields:
-              - {label: "Section ID", name: "id", widget: "string"}
-              - {label: "TR", name: "tr", widget: "string"}
-              - {label: "EN", name: "en", widget: "string"}
-          - {label: "Footer (TR)", name: "footer_tr", widget: "string"}
-          - {label: "Footer (EN)", name: "footer_en", widget: "string"}
+              - { label: "Madde", name: "item", widget: "string" }
 
-  - name: "hero"
-    label: "Üst Banner (Hero)"
+  - name: "about_en"
+    label: "About (EN)"
     files:
-      - label: "Hero"
-        name: "hero"
-        file: "content/sections/hero.json"
-        format: "json"
+      - file: "content/en/sections/about.json"
+        label: "About (EN)"
+        name: "about_en_file"
         fields:
-          - {label: "Yükseklik (örn: 78vh / 720px)", name: "height", widget: "string"}
-          - {label: "Overlay (0.30-0.92)", name: "overlay", widget: "number", value_type: "float"}
-          - {label: "Blur (px)", name: "blur", widget: "number"}
-          - {label: "Kicker TR", name: "kicker_tr", widget: "string"}
-          - {label: "Kicker EN", name: "kicker_en", widget: "string"}
-          - {label: "Başlık TR", name: "title_tr", widget: "string"}
-          - {label: "Başlık EN", name: "title_en", widget: "string"}
-          - {label: "Alt Metin TR", name: "subtitle_tr", widget: "text"}
-          - {label: "Alt Metin EN", name: "subtitle_en", widget: "text"}
-          - {label: "CTA1 TR", name: "cta1_tr", widget: "string"}
-          - {label: "CTA1 EN", name: "cta1_en", widget: "string"}
-          - {label: "CTA1 Link", name: "cta1_href", widget: "string"}
-          - {label: "CTA2 TR", name: "cta2_tr", widget: "string"}
-          - {label: "CTA2 EN", name: "cta2_en", widget: "string"}
-          - {label: "CTA2 Link", name: "cta2_href", widget: "string"}
-          - {label: "Arkaplan Görsel", name: "bg_image", widget: "image", required: false}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "text" }
+          - label: "Highlights"
+            name: "bullets"
+            widget: "list"
+            fields:
+              - { label: "Item", name: "item", widget: "string" }
 
-  - name: "bottom_banner"
-    label: "Alt Banner"
+  - name: "contact_tr"
+    label: "İletişim + Harita (TR)"
     files:
-      - label: "Alt Banner"
-        name: "bottom"
-        file: "content/sections/bottom_banner.json"
-        format: "json"
+      - file: "content/tr/sections/contact.json"
+        label: "İletişim (TR)"
+        name: "contact_tr_file"
         fields:
-          - {label: "Yükseklik (örn: 420px)", name: "height", widget: "string"}
-          - {label: "Overlay (0.30-0.92)", name: "overlay", widget: "number", value_type: "float"}
-          - {label: "Blur (px)", name: "blur", widget: "number"}
-          - {label: "Başlık TR", name: "title_tr", widget: "string"}
-          - {label: "Başlık EN", name: "title_en", widget: "string"}
-          - {label: "Alt Metin TR", name: "subtitle_tr", widget: "text"}
-          - {label: "Alt Metin EN", name: "subtitle_en", widget: "text"}
-          - {label: "CTA1 TR", name: "cta1_tr", widget: "string"}
-          - {label: "CTA1 EN", name: "cta1_en", widget: "string"}
-          - {label: "CTA1 Link", name: "cta1_href", widget: "string"}
-          - {label: "CTA2 TR", name: "cta2_tr", widget: "string"}
-          - {label: "CTA2 EN", name: "cta2_en", widget: "string"}
-          - {label: "CTA2 Link", name: "cta2_href", widget: "string"}
-          - {label: "Arkaplan Görsel", name: "bg_image", widget: "image", required: false}
+          - { label: "Başlık", name: "title", widget: "string" }
+          - { label: "Metin", name: "text", widget: "text", required: false }
+          - { label: "Adres", name: "address", widget: "text", required: false }
+          - { label: "Telefon", name: "phone", widget: "string", required: false }
+          - { label: "E-posta", name: "email", widget: "string", required: false }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string", required: false }
+          - { label: "Google Maps EMBED URL (iframe değil, sadece URL)", name: "maps_embed_url", widget: "string", required: false }
 
-  - name: "about"
-    label: "Hakkımızda"
+  - name: "contact_en"
+    label: "Contact + Map (EN)"
     files:
-      - label: "Hakkımızda"
-        name: "about"
-        file: "content/sections/about.json"
-        format: "json"
+      - file: "content/en/sections/contact.json"
+        label: "Contact (EN)"
+        name: "contact_en_file"
         fields:
-          - {label: "Başlık TR", name: "title_tr", widget: "string"}
-          - {label: "Başlık EN", name: "title_en", widget: "string"}
-          - {label: "Metin TR", name: "text_tr", widget: "text"}
-          - {label: "Metin EN", name: "text_en", widget: "text"}
-          - {label: "Maddeler TR", name: "bullets_tr", widget: "list"}
-          - {label: "Maddeler EN", name: "bullets_en", widget: "list"}
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Text", name: "text", widget: "text", required: false }
+          - { label: "Address", name: "address", widget: "text", required: false }
+          - { label: "Phone", name: "phone", widget: "string", required: false }
+          - { label: "Email", name: "email", widget: "string", required: false }
+          - { label: "WhatsApp", name: "whatsapp", widget: "string", required: false }
+          - { label: "Google Maps EMBED URL (URL only)", name: "maps_embed_url", widget: "string", required: false }
 
-  - name: "contact"
-    label: "İletişim + Harita"
+  - name: "services_tr"
+    label: "Hizmetler (TR)"
     files:
-      - label: "İletişim"
-        name: "contact"
-        file: "content/sections/contact.json"
-        format: "json"
+      - file: "content/tr/sections/services.json"
+        label: "Hizmetler (TR)"
+        name: "services_tr_file"
         fields:
-          - {label: "Başlık TR", name: "title_tr", widget: "string"}
-          - {label: "Başlık EN", name: "title_en", widget: "string"}
-          - {label: "Alt Metin TR", name: "subtitle_tr", widget: "text"}
-          - {label: "Alt Metin EN", name: "subtitle_en", widget: "text"}
-          - {label: "Adres TR", name: "address_tr", widget: "string"}
-          - {label: "Adres EN", name: "address_en", widget: "string"}
-          - {label: "Telefon", name: "phone", widget: "string"}
-          - {label: "E-posta", name: "email", widget: "string"}
-          - {label: "WhatsApp", name: "whatsapp", widget: "string"}
-          - {label: "Google Maps Embed URL", name: "map_embed_url", widget: "text"}
-
-  - name: "services"
-    label: "Hizmetler"
-    files:
-      - label: "Liste"
-        name: "services"
-        file: "content/collections/services.json"
-        format: "json"
-        fields:
-          - label: "Hizmetler"
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
+          - label: "Hizmet Kartları"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Slug", name: "slug", widget: "string"}
-              - {label: "Başlık TR", name: "title_tr", widget: "string"}
-              - {label: "Başlık EN", name: "title_en", widget: "string"}
-              - {label: "Özet TR", name: "excerpt_tr", widget: "text"}
-              - {label: "Özet EN", name: "excerpt_en", widget: "text"}
-              - {label: "Görsel", name: "image", widget: "image", required: false}
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Özet", name: "text", widget: "text", required: false }
+              - { label: "İkon (opsiyonel)", name: "icon", widget: "string", required: false }
+              - { label: "Link (opsiyonel)", name: "href", widget: "string", required: false }
 
-  - name: "partners"
-    label: "Partner Markalar (Slider)"
+  - name: "services_en"
+    label: "Services (EN)"
     files:
-      - label: "Liste"
-        name: "partners"
-        file: "content/collections/partners.json"
-        format: "json"
+      - file: "content/en/sections/services.json"
+        label: "Services (EN)"
+        name: "services_en_file"
         fields:
-          - label: "Partnerler"
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Service Cards"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Ad", name: "name", widget: "string"}
-              - {label: "Logo", name: "logo", widget: "image", required: false}
-              - {label: "Link", name: "url", widget: "string", required: false}
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "text", widget: "text", required: false }
+              - { label: "Icon (optional)", name: "icon", widget: "string", required: false }
+              - { label: "Link (optional)", name: "href", widget: "string", required: false }
 
-  - name: "solutions"
-    label: "Çözümler"
+  - name: "partners_tr"
+    label: "Partner Markalar (Slider) (TR)"
     files:
-      - label: "Liste"
-        name: "solutions"
-        file: "content/collections/solutions.json"
-        format: "json"
+      - file: "content/tr/sections/partners.json"
+        label: "Partner Markalar (TR)"
+        name: "partners_tr_file"
         fields:
-          - label: "Çözümler"
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
+          - label: "Logolar"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Slug", name: "slug", widget: "string"}
-              - {label: "Başlık TR", name: "title_tr", widget: "string"}
-              - {label: "Başlık EN", name: "title_en", widget: "string"}
-              - {label: "Özet TR", name: "excerpt_tr", widget: "text"}
-              - {label: "Özet EN", name: "excerpt_en", widget: "text"}
-              - {label: "Görsel", name: "image", widget: "image", required: false}
+              - { label: "Marka", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "href", widget: "string", required: false }
 
-  - name: "projects"
-    label: "Projeler"
+  - name: "partners_en"
+    label: "Partner Brands (Slider) (EN)"
     files:
-      - label: "Liste"
-        name: "projects"
-        file: "content/collections/projects.json"
-        format: "json"
+      - file: "content/en/sections/partners.json"
+        label: "Partner Brands (EN)"
+        name: "partners_en_file"
         fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Logos"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Brand", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "solutions_tr"
+    label: "Çözümler (TR)"
+    files:
+      - file: "content/tr/sections/solutions.json"
+        label: "Çözümler (TR)"
+        name: "solutions_tr_file"
+        fields:
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
+          - label: "Çözüm Kartları"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Özet", name: "text", widget: "text", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "solutions_en"
+    label: "Solutions (EN)"
+    files:
+      - file: "content/en/sections/solutions.json"
+        label: "Solutions (EN)"
+        name: "solutions_en_file"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Solution Cards"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "text", widget: "text", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "projects_tr"
+    label: "Projeler (TR)"
+    files:
+      - file: "content/tr/sections/projects.json"
+        label: "Projeler (TR)"
+        name: "projects_tr_file"
+        fields:
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
           - label: "Projeler"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Slug", name: "slug", widget: "string"}
-              - {label: "Başlık TR", name: "title_tr", widget: "string"}
-              - {label: "Başlık EN", name: "title_en", widget: "string"}
-              - {label: "Özet TR", name: "excerpt_tr", widget: "text"}
-              - {label: "Özet EN", name: "excerpt_en", widget: "text"}
-              - {label: "Görsel", name: "image", widget: "image", required: false}
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Özet", name: "text", widget: "text", required: false }
+              - { label: "Görsel", name: "image", widget: "image", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
 
-  - name: "blog"
-    label: "Blog"
+  - name: "projects_en"
+    label: "Projects (EN)"
     files:
-      - label: "Liste"
-        name: "blog"
-        file: "content/collections/blog.json"
-        format: "json"
+      - file: "content/en/sections/projects.json"
+        label: "Projects (EN)"
+        name: "projects_en_file"
         fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Projects"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "text", widget: "text", required: false }
+              - { label: "Image", name: "image", widget: "image", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "blog_tr"
+    label: "Blog (TR)"
+    files:
+      - file: "content/tr/sections/blog.json"
+        label: "Blog (TR)"
+        name: "blog_tr_file"
+        fields:
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
           - label: "Yazılar"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Slug", name: "slug", widget: "string"}
-              - {label: "Tarih (YYYY-MM-DD)", name: "date", widget: "string"}
-              - {label: "Başlık TR", name: "title_tr", widget: "string"}
-              - {label: "Başlık EN", name: "title_en", widget: "string"}
-              - {label: "Özet TR", name: "excerpt_tr", widget: "text"}
-              - {label: "Özet EN", name: "excerpt_en", widget: "text"}
-              - {label: "Görsel", name: "image", widget: "image", required: false}
+              - { label: "Başlık", name: "title", widget: "string" }
+              - { label: "Özet", name: "text", widget: "text", required: false }
+              - { label: "Tarih", name: "date", widget: "datetime", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
 
-  - name: "references"
-    label: "Referanslar (Slider)"
+  - name: "blog_en"
+    label: "Blog (EN)"
     files:
-      - label: "Liste"
-        name: "references"
-        file: "content/collections/references.json"
-        format: "json"
+      - file: "content/en/sections/blog.json"
+        label: "Blog (EN)"
+        name: "blog_en_file"
         fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "Posts"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Summary", name: "text", widget: "text", required: false }
+              - { label: "Date", name: "date", widget: "datetime", required: false }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "references_tr"
+    label: "Referanslar (Slider) (TR)"
+    files:
+      - file: "content/tr/sections/references.json"
+        label: "Referanslar (TR)"
+        name: "references_tr_file"
+        fields:
+          - { label: "Bölüm Başlığı", name: "title", widget: "string" }
+          - { label: "Bölüm Açıklama", name: "subtitle", widget: "text", required: false }
           - label: "Referanslar"
             name: "items"
             widget: "list"
             fields:
-              - {label: "Ad", name: "name", widget: "string"}
-              - {label: "Logo", name: "logo", widget: "image", required: false}
-              - {label: "Link", name: "url", widget: "string", required: false}
+              - { label: "Müşteri/Marka", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "href", widget: "string", required: false }
+
+  - name: "references_en"
+    label: "References (Slider) (EN)"
+    files:
+      - file: "content/en/sections/references.json"
+        label: "References (EN)"
+        name: "references_en_file"
+        fields:
+          - { label: "Section Title", name: "title", widget: "string" }
+          - { label: "Section Subtitle", name: "subtitle", widget: "text", required: false }
+          - label: "References"
+            name: "items"
+            widget: "list"
+            fields:
+              - { label: "Client/Brand", name: "name", widget: "string" }
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Link", name: "href", widget: "string", required: false }

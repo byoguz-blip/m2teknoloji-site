@@ -1,0 +1,17 @@
+{
+  "height": "78vh",
+  "overlay": 0.78,
+  "blur": 12,
+  "kicker": "M2 Teknoloji",
+  "title": "IT Solutions, Network & Security",
+  "subtitle": "Sunucu altyapısı, ağ yönetimi ve siber güvenlikte uçtan uca destek.",
+  "cta1": {
+    "text": "İletişim",
+    "href": "#contact"
+  },
+  "cta2": {
+    "text": "Hizmetler",
+    "href": "#services"
+  },
+  "bg_image": "/assets/uploads/hero.jpg"
+}

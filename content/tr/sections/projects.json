@@ -1,0 +1,12 @@
+{
+  "title": "Projeler",
+  "subtitle": "Öne çıkan uygulama ve altyapı dönüşümleri.",
+  "items": [
+    {
+      "title": "Güvenlik Geçidi Kurulumu",
+      "text": "FortiGate ile uçtan uca güvenlik.",
+      "image": "/assets/uploads/projects/p1.jpg",
+      "href": "#contact"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "title": "Blog",
+  "subtitle": "Tips, security notes and guides.",
+  "items": [
+    {
+      "title": "Firewall rule hygiene",
+      "text": "Keep rules safe and manageable.",
+      "date": "2026-02-28T10:00:00.000Z",
+      "href": "#"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "title": "Referanslar",
+  "subtitle": "Birlikte çalıştığımız markalar ve müşteriler.",
+  "items": [
+    {
+      "name": "Referans 1",
+      "logo": "/assets/uploads/references/r1.svg",
+      "href": "#"
+    }
+  ]
+}
