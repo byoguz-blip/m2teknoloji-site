@@ -1,0 +1,50 @@
+[
+  {
+    "slug": "solution-1",
+    "title_tr": "Çözüm 1",
+    "title_en": "Solution 1",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "solution-2",
+    "title_tr": "Çözüm 2",
+    "title_en": "Solution 2",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "solution-3",
+    "title_tr": "Çözüm 3",
+    "title_en": "Solution 3",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "solution-4",
+    "title_tr": "Çözüm 4",
+    "title_en": "Solution 4",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "solution-5",
+    "title_tr": "Çözüm 5",
+    "title_en": "Solution 5",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "solution-6",
+    "title_tr": "Çözüm 6",
+    "title_en": "Solution 6",
+    "excerpt_tr": "Kısa açıklama (panelden değiştir).",
+    "excerpt_en": "Short description (editable in admin).",
+    "image": "/assets/img/placeholder-card.svg"
+  }
+]

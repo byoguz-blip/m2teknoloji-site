@@ -1,0 +1,26 @@
+[
+  {
+    "slug": "project-1",
+    "title_tr": "Kurumsal Firewall Geçişi",
+    "title_en": "Enterprise Firewall Migration",
+    "excerpt_tr": "Politika, VPN ve loglama ile güvenli geçiş.",
+    "excerpt_en": "Secure migration with policies, VPN, and logging.",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "project-2",
+    "title_tr": "Sanallaştırma Yenileme",
+    "title_en": "Virtualization Refresh",
+    "excerpt_tr": "Cluster + yedeklilik + izleme.",
+    "excerpt_en": "Cluster + redundancy + monitoring.",
+    "image": "/assets/img/placeholder-card.svg"
+  },
+  {
+    "slug": "project-3",
+    "title_tr": "Backup & DR Kurulumu",
+    "title_en": "Backup & DR Setup",
+    "excerpt_tr": "Offsite replikasyon ve test senaryoları.",
+    "excerpt_en": "Offsite replication and test scenarios.",
+    "image": "/assets/img/placeholder-card.svg"
+  }
+]
