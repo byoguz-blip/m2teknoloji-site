@@ -29,6 +29,9 @@ Bu paket **CMS kavgası olmadan**, profesyonel, hızlı ve stabil bir kurulum sa
 4. Deploy tekrar
 5. Admin: `https://SENIN-SITE.netlify.app/admin/`
 
+
+sdasdads
+
 ## 4) İçerikleri düzenle
 Admin panelden:
 - Üst/Alt banner yüksekliği (vh/px)
